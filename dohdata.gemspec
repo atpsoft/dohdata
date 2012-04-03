@@ -2,12 +2,12 @@ require 'rake'
 
 Gem::Specification.new do |s|
   s.name = 'dohdata'
-  s.version = '0.1.1'
+  s.version = '0.1.2'
   s.summary = "data generation framework"
   s.description = "utilities for generating random names, phone numbers, emails, etc."
   s.require_path = 'lib'
   s.required_ruby_version = '>= 1.9.2'
-	s.add_runtime_dependency 'dohutil', '>= 0.1.7'
+	s.add_runtime_dependency 'dohutil', '>= 0.1.9'
   s.authors = ['Makani Mason', 'Kem Mason']
   s.bindir = 'bin'
   s.homepage = 'https://github.com/atpsoft/dohdata'
