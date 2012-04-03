@@ -5,11 +5,13 @@ require 'doh/config'
 require 'doh/data/catalog'
 require 'doh/data/require_datagen'
 require 'doh/mysql/connector_util'
+require 'doh/log'
 DohData::require_datagen
 
 opts = Doh::Options.new(
 {'target' => [Doh::config['primary_database'], "-g", "--target <database>", "name of the target database -- defaults to config['primary_database'], currently '#{Doh::config['primary_database']}'"] \
 ,'count' => [1, "-c", "--count <amount>", "how many to create"] \
+,'logging' => [false, "-l", "--logging", "enable logging (off by default)"] \
 }, true, 'list of catalog entries to create')
 
 if opts.varargs.size == 0
@@ -26,14 +28,7 @@ opts.varargs.each do |entry|
   if klass.nil?
     puts "unable to find data object matching: #{entry}"
   else
-    # Doh::disable_logging
-    opts.count.to_i.times do
-      begin
-        klass.new.save_to_database
-#      rescue Exception => excpt
-#        puts "ignoring exception: #{excpt.inspect}"
-      end
-    end
+    DohLog::disable unless opts.logging
+    opts.count.to_i.times { klass.new.save_to_database }
   end
 end
-
