@@ -2,7 +2,7 @@ require 'rake'
 
 Gem::Specification.new do |s|
   s.name = 'dohdata'
-  s.version = '0.1.2'
+  s.version = '0.1.3'
   s.summary = "data generation framework"
   s.description = "utilities for generating random names, phone numbers, emails, etc."
   s.require_path = 'lib'
