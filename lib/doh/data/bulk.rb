@@ -67,7 +67,7 @@ module DohData
 ,'125000024','256074974','291070001','322271627','325070760','303986313','296073414'
 ]
 
-@@employers = ["Google","Geeks R Us","Home Depot","Wal-Mart","Shopko","Wendy's","Staples","E-Bay","Computer World","OfficeMax","Applebee's","Comcast","Target","Verizon","Lowes","Sears","Convergys","Federal Express","One Stop Auto","Pizza Hut","ABC Construction"]
+@@employers = ["Google","Geeks R Us","Home Depot","Wal-Mart","Shopko","Wendy's","Staples","E-Bay","Computer World","OfficeMax","Applebee's","Comcast","Target","Lowes","Sears","Convergys","Federal Express","One Stop Auto","Pizza Hut","ABC Construction"]
 
 @@generation_options = ['I', 'II', 'III', 'IV', 'Jr', 'Sr']
 
