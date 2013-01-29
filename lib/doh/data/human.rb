@@ -127,8 +127,9 @@ def random_country_code
   random_element(['USA', 'MEX', 'CAN'])
 end
 
+FIRST_OCTET = ((1..223).to_a - [10,100,127,169,172,192,198,203]).freeze
 def random_ip_address
-  "#{random_int(256)}.#{random_int(256)}.#{random_int(256)}.#{random_int(256)}"
+  "#{random_element(FIRST_OCTET)}.#{random_int(256)}.#{random_int(256)}.#{random_int(256)}"
 end
 
 end
