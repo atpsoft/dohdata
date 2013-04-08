@@ -5,7 +5,7 @@ require 'doh/config'
 require 'doh/data/catalog'
 require 'doh/data/require_datagen'
 require 'doh/mysql/connector_util'
-require 'doh/log'
+require 'dohlog'
 DohData::require_datagen
 
 opts = Doh::Options.new(
