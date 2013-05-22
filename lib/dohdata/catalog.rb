@@ -1,4 +1,4 @@
-require 'doh/class_basename'
+require 'dohutil/class_basename'
 
 module DohData
 

@@ -1,5 +1,5 @@
 require 'date'
-require 'doh/data/bulk'
+require 'dohdata/bulk'
 
 module DohData
 
