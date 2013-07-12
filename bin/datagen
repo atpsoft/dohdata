@@ -29,6 +29,6 @@ opts.varargs.each do |entry|
     puts "unable to find data object matching: #{entry}"
   else
     DohLog.disable unless opts.logging
-    opts.count.to_i.times { klass.new.save_to_database }
+    opts.count.to_i.times { klass.new.save }
   end
 end
