@@ -4,23 +4,17 @@ require 'dohroot/options'
 require 'dohutil/config'
 require 'dohdata/catalog'
 require 'dohdata/require_datagen'
-require 'dohmysql/connector_util'
 require 'dohlog'
 DohData.require_datagen
 
 opts = Doh::Options.new(
-{'target' => [Doh.config['primary_database'], "-g", "--target <database>", "name of the target database -- defaults to config['primary_database'], currently '#{Doh.config['primary_database']}'"] \
-,'count' => [1, "-c", "--count <amount>", "how many to create"] \
+{'count' => [1, "-c", "--count <amount>", "how many to create"] \
 ,'logging' => [false, "-l", "--logging", "enable logging (off by default)"] \
 }, true, 'list of catalog entries to create')
 
 if opts.varargs.size == 0
   DohData.catalog_list.each {|elem| puts elem }
   exit
-end
-
-if opts.target
-  DohDb.reconfigure_connector({'database' => opts.target})
 end
 
 opts.varargs.each do |entry|
