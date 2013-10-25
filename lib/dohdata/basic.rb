@@ -1,4 +1,5 @@
 module DohData
+extend self
 
 #implemented here so random behavior can be overridden by end user
 def random_int(max)

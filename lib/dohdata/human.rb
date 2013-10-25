@@ -2,6 +2,7 @@ require 'date'
 require 'dohdata/bulk'
 
 module DohData
+extend self
 
 def random_first_name
   random_element(@@first_names)
