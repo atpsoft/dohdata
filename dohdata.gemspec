@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.description = "utilities for generating random names, phone numbers, emails, etc."
   s.require_path = 'lib'
   s.required_ruby_version = '>= 2.0.0'
-  s.add_runtime_dependency 'dohutil', '>= 0.2.24'
-  s.add_runtime_dependency 'dohlog', '>= 0.2.5'
+  s.add_runtime_dependency 'dohutil', '~> 0.2', '>= 0.2.24'
+  s.add_runtime_dependency 'dohlog', '~> 0.2', '>= 0.2.5'
   s.authors = ['Makani Mason', 'Kem Mason']
   s.bindir = 'bin'
   s.homepage = 'https://github.com/atpsoft/dohdata'
