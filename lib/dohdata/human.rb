@@ -53,6 +53,7 @@ def random_email(first_name = nil, last_name = nil)
     name += first_name.slice(0, random_range(1, first_name.size)) if first_name
     name += random_element('', '.', '_') if first_name && last_name
     name += last_name.slice(0, random_range(1, last_name.size)) if last_name
+    name = name[0..(max_name_size-1)]
     max_num_size = max_name_size - name.size
     name += random_digits(random_range([7, max_num_size].min, [12, max_num_size].min))
   else
