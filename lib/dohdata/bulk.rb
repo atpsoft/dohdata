@@ -58,9 +58,9 @@ module DohData
 ,'Kansas City','Sacramento','Houston','San Diego','Los Angeles'
 ]
 
-@@street_names = ['Park','Main','Oak','Pine','Oak','Pine','Maple','Cedar','Elm','Washington','Lake','Hill','Sunset','Broadway','Harrison','Higgins','Lincoln']
+@@street_names = ['Adams','Amherst','Ann','Aspen','Bank','Beechwood','Belmont','Berkshire','Brandywine','Briarwood','Bridge','Bridle','Broadway','Brown','Cambridge','Canal','Canterbury','Cardinal','Carriage','Cedar','Cemetery','Central','Chapel','Chestnut','Church','Clay','Cleveland','Cobblestone','College','Colonial','Columbia','Cooper','Country Club','Court','Creekside','Cypress','Deerfield','Delaware','Devon','Division','Dogwood','Eagle','East','Edgewood','Elm','Essex','Euclid','Evergreen','Fairview','Fawn','Fieldstone','Forest','Franklin','Front','Garden','Garfield','Glenwood','Grant','Grove','Hamilton','Hanover','Harrison','Hartford','Hawthorne','Heather','Henry','Hickory','Higgins','Hill','Holly','Homestead','Howard','Inverness','Jackson','James','Jefferson','Jones','King','Lafayette','Lake','Laurel','Lawrence','Lincoln','Linden','Locust','Madison','Magnolia','Maiden','Main','Manor','Maple','Meadow','Mill','Monroe','Mulberry','Myrtle','New','Oak','Old York','Olive','Orchard','Oxford','Park','Pearl','Penn','Pennsylvania','Pheasant Run','Pine','Pleasant','Prospect','Queen','Race','Railroad','River','Roberts','Rose','Rosewood','School','Schoolhouse','Sherwood','Smith','Somerset','South','Spruce','State','Strawberry','Summer','Summit','Sunset','Sycamore','Taylor','Victoria','Walnut','Washington','White','Williams','Willow','Winding Way','Wood','Woodland','York']
 
-@@street_types = ['Ave','Blvd','Ctr','Cir','Ct','Dr','Grv','Jct','Ln','Mnr','Mtn','Pkwy','Sq','St']
+@@street_types = ['Ave','Aly','Anx','Bch','Blvd','Bg','Br','Ctr','Cir','Ct','Crk','Dr','Fwy','Gdn','Grv','Jct','Ln','Mdw','Mnr','Mtn','Pkwy','Rd','Riv','Sq','St','Xrd','Vw','Vis','Way']
 
 @@bank_routing_numbers = \
 ['065000090','081000032','091000019','111000025','111900659','121000358','121042882','121122676','122000247','122000496','122000661','122101706' \

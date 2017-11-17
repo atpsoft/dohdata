@@ -92,9 +92,9 @@ def random_street_number
   weight = random_int(10)
   if weight > 8
     random_int(50000)
-  elsif weight > 5
-    random_int(10000)
   elsif weight > 3
+    random_int(10000)
+  elsif weight > 1
     random_int(1000)
   else
     random_int(100)
