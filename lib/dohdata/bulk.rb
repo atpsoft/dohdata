@@ -50,8 +50,6 @@ module DohData
 ,'peoplepc'
 ].freeze
 
-@@email_tlds = ['com','net','org','info','biz','tv','us','name','cc','cn','com.cn','net.cn','org.cn','ws']
-
 @@cities = \
 ['Tacoma','Montgomery','Tucson','Riverside','Bakersfield','Austin','Portland','Minneapolis','Baton Rouge','Stockton','St Louis','San Antonio' \
 ,'Oakland','Albuquerque','Seattle','Fresno','Birmingham','San Francisco','Long Beach','Dallas','Philadelphia','Phoenix','San Jose','Milwaukee' \
