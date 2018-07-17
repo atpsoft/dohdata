@@ -45,7 +45,7 @@ def random_full_name
 end
 
 def random_email(first_name = nil, last_name = nil)
-  domain = '@' + random_element(@@email_domains) + '.com'
+  domain = '@' + random_element(@@email_domains) + '.' + random_element(@@email_tlds)
   max_name_size = 50 - domain.size
 
   if first_name || last_name
